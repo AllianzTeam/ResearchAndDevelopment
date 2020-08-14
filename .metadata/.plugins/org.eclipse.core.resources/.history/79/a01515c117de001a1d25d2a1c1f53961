@@ -1,0 +1,27 @@
+package com.groupchallenge.co2tracker.dao;
+
+
+import java.util.List;
+
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class CustomerDaoImpl implements CustomerDao {
+
+	@Override
+	public List<Customer> getCustomers() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void save(Customer customer) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+
+}

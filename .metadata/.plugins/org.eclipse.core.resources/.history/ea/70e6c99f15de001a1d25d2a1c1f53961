@@ -1,0 +1,10 @@
+package com.groupchallenge.co2tracker.service;
+
+import java.util.List;
+
+import com.groupchallenge.co2tracker.bean.CustomerBean;
+
+public interface CustomerService {
+	List<CustomerBean> getCustomers();
+	void save(CustomerBean customerBean);
+}

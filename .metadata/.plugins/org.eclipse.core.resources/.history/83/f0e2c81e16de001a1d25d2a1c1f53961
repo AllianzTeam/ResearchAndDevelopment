@@ -1,0 +1,11 @@
+package com.groupchallenge.co2tracker.dao;
+
+import java.util.List;
+
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public interface CustomerDao {
+	List<Customer> getCustomers();
+	void save(Customer customer);
+}

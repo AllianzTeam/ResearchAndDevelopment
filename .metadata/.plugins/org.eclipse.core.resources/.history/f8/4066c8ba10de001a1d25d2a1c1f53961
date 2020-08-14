@@ -1,0 +1,10 @@
+package com.groupchallenge.co2tracker.repository;
+
+import java.util.List;
+
+import org.springframework.data.repository.CrudRepository;
+
+public interface CustomerRepository {
+	List<Customer> findAll();
+
+}

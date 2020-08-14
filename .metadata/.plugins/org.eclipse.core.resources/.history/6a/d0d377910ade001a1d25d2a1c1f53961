@@ -1,0 +1,9 @@
+package com.groupchallenge.co2tracker.dao;
+
+import java.util.List;
+
+public class CustomerDao {
+	List<Customer> getCustomers();
+	void save(Customer customer);
+
+}

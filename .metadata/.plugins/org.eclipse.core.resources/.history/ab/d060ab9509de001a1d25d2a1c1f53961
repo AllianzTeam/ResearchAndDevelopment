@@ -1,0 +1,8 @@
+package com.groupchallenge.co2tracker.dao;
+
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class CustomerDaoImpl implements CustomerDao {
+
+}

@@ -1,0 +1,6 @@
+package com.groupchallenge.co2tracker.dao;
+
+@Repository
+public class CustomerDaoImpl implements CustomerDao {
+
+}

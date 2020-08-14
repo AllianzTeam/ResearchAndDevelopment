@@ -1,0 +1,30 @@
+package com.groupchallenge.co2tracker.service;
+
+import java.util.List;
+
+public class CustomerServiceImpl implements CustomerService{
+
+	
+	@Autowired
+	private ItemDao itemDao;
+
+	@Override
+	public List<ItemBean> getItems() {
+		List<Item> items = itemDao.getItems();
+		List<ItemBean> beans = new ArrayList<ItemBean>();
+		for (Item i : items) {
+			ItemBean bean = new ItemBean();
+			bean.setId(i.getId());
+			bean.setName(i.getName());
+			beans.add(bean);
+		}
+		return beans;
+	}
+
+	@Override
+	public void save(ItemBean itemBean) {
+		Item i = new Item(itemBean.getId(), itemBean.getName());
+		itemDao.save(i);
+	}
+
+}
